@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tripadvisor</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!--NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Tripadvisor logo">
+
+    </div>
+
+    <div class="theme-toggle">
+      <i class="fa-solid fa-moon"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Things to do</a></li>
+      <li><a href="#">Restaurants</a></li>
+      <li><a href="#">Flights</a></li>
+      <li><a href="#" class="btn">Sign In</a></li>
+    </ul>
+
+
+
+  </nav>
+  <!-- SEARCH SECTION -->
+  <section class="search-section">
+    <h1>Your next trip starts here</h1>
+    <p>Find reviews, opinions, and the best travel deals.</p>
+    <div class="search-box">
+      <input type="text" placeholder="where to go ?">
+      <button>Search</button>
+    </div>
+  </section>
+
+
+  <!-- SEARCH TAB SECTION -->
+  <section class="search-tabs">
+    <div class="tab-buttons">
+      <button class="active"> <i class="fa-solid fa-bed" style="color: #00040a;"></i>Hotels</button>
+      <button> <i class="fa-solid fa-camera" style="color: #00060f;"></i>Things to do</button>
+      <button> <i class="fa-solid fa-utensils" style="color: #00040a;"></i>Restaurants</button>
+    </div>
+
+  </section>
+
+  <!-- POPULAR DESTINATIONS -->
+  <section class="destinations">
+    <h2>Popular destinations</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="./images/place1.jpg" alt="">
+        <h3>Delhi</h3>
+        <p>India</p>
+      </div>
+      <div class="card">
+        <img src="./images/place2.jpg" alt="">
+        <h3>Singapore</h3>
+        <p>Asia</p>
+      </div>
+      <div class="card">
+        <img src="./images/place3.jpg" alt="">
+        <h3>BangkoK</h3>
+        <p>Thailand</p>
+      </div>
+      <div class="card">
+        <img src="./images/place4.jpg" alt="">
+        <h3>Kerala</h3>
+        <p>India</p>
+      </div>
+    </div>
+  </section>
+  <!-- AUTO SLIDER SECTION -->
+  <section class="auto-slider-section">
+    <h2>Trending Travel Spots</h2>
+
+    <div class="auto-slider">
+      <div class="slider-track">
+        <div class="slide"><img src="./images/place5.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place6.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place7.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place8.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place9.jpg" alt=""></div>
+
+        <!-- Duplicate slides for seamless loop -->
+        <div class="slide"><img src="./images/place10.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place11.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place12.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place13.jpg" alt=""></div>
+        <div class="slide"><img src="./images/place14.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <!-- TRIP CARDS SCROLLER -->
+  <section class="trip-section">
+    <h2>Recommended Trips for You</h2>
+
+    <div class="trip-carousel">
+      <div class="trip-card">
+        <img src="./images/content1.jpg" alt="">
+        <h3>Weekend Getaway</h3>
+      </div>
+
+      <div class="trip-card">
+        <img src="./images/content2.jpg" alt="">
+        <h3>Romantic Retreat</h3>
+      </div>
+
+      <div class="trip-card">
+        <img src="./images/adventure.jpg" alt="">
+        <h3>Wild Adventures</h3>
+      </div>
+
+      <div class="trip-card">
+        <img src="./images/content3.jpg" alt="">
+        <h3>Serene Staycations</h3>
+      </div>
+
+      <div class="trip-card">
+        <img src="./images/content4.jpg" alt="">
+        <h3>Eco Escape</h3>
+      </div>
+    </div>
+  </section>
+  <!-- HOTEL CARDS -->
+  <section class="hotel-section">
+    <h2>Popular Stays</h2>
+
+    <div class="hotel-cards">
+      <div class="hotel-card">
+        <img src="./images/hotel1.jpg">
+        <h3>Blue Lagoon Resort</h3>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <p>From $45/night</p>
+      </div>
+
+      <div class="hotel-card">
+        <img src="./images/hotel2.jpg">
+        <h3>Silver Sands Resort</h3>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <p>From $60/night</p>
+      </div>
+
+      <div class="hotel-card">
+        <img src="./images/hotel3.jpg">
+        <h3>Golden Palm Resort</h3>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <p>From $75/night</p>
+      </div>
+      <div class="hotel-card">
+        <img src="./images/hotel4.jpg">
+        <h3>Paradise Island</h3>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <p>From $55/night</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+
+    <div class="footer-top">
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <a href="#">Our Story</a>
+        <a href="#">Why Choose Us</a>
+        <a href="#">Team</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="#">Destinations</a>
+        <a href="#">Holiday Packages</a>
+        <a href="#">Top Attractions</a>
+        <a href="#">Travel Deals</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Help</h3>
+        <a href="#">Customer Support</a>
+        <a href="#">Booking Guide</a>
+        <a href="#">Cancellation Policy</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="#">Email Us: keertikajaganathan7@gmail.com</a>
+        <a href="#">Call Support: +91 9526342376 </a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Feedback Form</a>
+      </div>
+      
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 TripAdvisor Clone • Created by Kiki</p>
+    </div>
+
+  </footer>
+  <script>
+  const toggleBtn = document.querySelector(".theme-toggle");
+  toggleBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+  };
+</script>

@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #222;
+  background-color: #f5f5f5;
+}
+
+/* LOGO */
+.logo {
+  width: 20%;
+  height: 10%;
+  margin: 10px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-links a:hover {
+  transition: 1s;
+  color: #34E0A1;
+
+}
+
+
+.btn {
+  background-color: #30B450;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white !important;
+}
+/* DARK MODE */
+body.dark {
+  background-color: #111;
+  color: white;
+}
+
+body.dark .navbar,
+body.dark .card,
+body.dark .hotel-card,
+body.dark .trip-card,
+body.dark .search-tabs {
+  background: #222 !important;
+  color: white !important;
+  box-shadow: none;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.theme-toggle i {
+  color: #30B450;
+  padding-left: 50px;
+  align-items: center;
+}
+
+/* SEARCH SECTION */
+.search-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #F2F2F2;
+}
+
+.search-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #30B450;
+}
+
+.search-box {
+  margin-top: 25px;
+}
+
+.search-box input {
+  width: 30%;
+  padding: 12px;
+  border-radius: 25px;
+  border: solid #bbb 1px;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #30B450;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* DESTINATIONS */
+.destinations {
+  padding: 50px;
+}
+
+.destinations h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.card img,
+.hotel-card img,
+.trip-card img {
+  transition: transform .4s;
+}
+.card:hover img,
+.hotel-card:hover img,
+.trip-card:hover img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+
+/* SEARCH TABS SECTION */
+.search-tabs {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.tab-buttons button {
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-buttons button:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #34e0a1;
+  color: #34e0a1;
+}
+
+/* AUTO SLIDER SECTION */
+.auto-slider-section {
+  padding: 40px;
+}
+
+.auto-slider-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Auto Slider */
+.auto-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(260px * 10);
+  /* slide width * number of slides */
+  animation: scroll 25s linear infinite;
+}
+
+.slide {
+  width: 260px;
+  height: 170px;
+  border-radius: 12px;
+  margin-right: 18px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* TRIP SCROLLER */
+.trip-section {
+  padding: 40px;
+}
+
+.trip-section h2 {
+  margin-bottom: 15px;
+}
+
+.trip-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.trip-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.trip-card {
+  min-width: 230px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.trip-card h3 {
+  padding: 30px;
+  
+}
+
+/* HOTEL CARDS */
+.hotel-section {
+  padding: 40px;
+}
+
+.hotel-section h2 {
+  margin-bottom: 20px;
+}
+
+.hotel-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.hotel-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.rating {
+  color: black;
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+/* FOOTER */
+.main-footer {
+  background: #111;
+  color: white;
+  padding: 50px 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: #34E0A1;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+}
+
+/* Divider */
+.main-footer hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+/* Bottom */
+.footer-bottom p {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* MOBILE VIWE RESPONSIVE DESIGN */
+@media(max-width: 990px) {
+  .search-box input {
+    width: 60%;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+@media(max-width: 700px) {
+  .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-section h1 {
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 480px) {
+  .logo {
+    width: 40%;
+  }
+
+  .search-section {
+    padding: 50px 20px;
+  }
+
+  .search-section h1 {
+    font-size: 22px;
+  }
+
+  .search-box input {
+    width: 80%;
+  }
+
+  .cards,
+  .hotel-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .slide {
+    width: 180px;
+    height: 120px;
+  }
+
+}
